@@ -34,7 +34,7 @@ def predict():
     else:
         res_val = "Heart Disease"
 
-    return render_template('Heart_Diseaase_prediction.html', prediction_text='Patient has {}'.format(res_val))
+    return render_template('Heart_Diseaase_Prediction.html', prediction_text='Patient has {}'.format(res_val))
 
 if __name__ == "__main__":
     app.run()
