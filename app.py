@@ -15,7 +15,7 @@ def about():
 
 @app.route('/prediction')
 def prediction():
-    return render_template('Heart_Diseaase_prediction.html')
+    return render_template('Heart_Diseaase_Prediction.html')
 
 
 @app.route('/predict',methods=['POST'])
