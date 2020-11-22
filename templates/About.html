@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo">
+        <img src="static/machine_learning-logo.png" alt="">
+        <ul class="nav-area">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container1">
+      <div class="Inner-container1">
+        <h1>About</h1>
+        <p class="text">
+          This Page tells wheather a person is having a Heart Disease or not.
+        </p>
+      </div>
+    </div>
+
+
+  <div class="container2">
+    <div class="Inner-container2">
+      <h1>Features</h1>
+      <p class="text">
+        1. age<br>
+        2. sex (1 = male; 0 = female)<br>
+        3. chest pain type (4 values)<br>
+        4. resting blood pressure<br>
+        5. serum cholestoral in mg/dl<br>
+        6. fasting blood sugar > 120 mg/dl (1 = true; 0 = false)<br>
+        7. resting electrocardiographic results (values 0,1,2)<br>
+        8. maximum heart rate achieved<br>
+        9. exercise induced angina (1 = yes; 0 = no)<br>
+        10.oldpeak = ST depression induced by exercise relative to rest<br>
+        11.the slope of the peak exercise ST segment<br>
+        12.number of major vessels (0-3) colored by flourosopy<br>
+        13.thal: 3 = normal; 6 = fixed defect; 7 = reversable defect<br>
+        14.Target - Diagnosis of heart disease (1 = yes; 0 = no)
+      </p>
+    </div>
+  </div>
+
+  <!--<div class="container2">
+    <div class="Inner-container1">
+      <h1>About</h1>
+      <p class="text">
+        This Page is a About page.
+      </p>
+    </div>
+  </div>-->
+
+  <footer>
+    <img src="static/machine_learning-logo.png" alt="">
+    <p>JAY SHANKAR BERA</p>
+  </footer>
+
+  </body>
+</html>

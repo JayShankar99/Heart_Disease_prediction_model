@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="static/prediction_page.css">
+</head>
+<body>
+    <header>
+    
+        <div class="wrapper">
+            <div class="logo">
+                <img src="static/machine_learning-logo.png" alt="">
+            </div>
+            <ul class="nav-area">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <center>
+                <form action="{{url_for('predict')}}" method="post">
+                    <h1 style="color:White">Enter the values of Heart features</h1>
+            
+                    <input type="text" name="age" placeholder="age" required="required">
+                    <input type="text" name="sex" placeholder="sex" required="required">
+                    <input type="text" name="cp" placeholder="cp" required="required">
+                    <input type="text" name="trestbps" placeholder="trestbps" required="required">
+                    <br></br>
+            
+                    <input type="text" name="chol" placeholder="chol" required="required">
+                    <input type="text" name="fbs" placeholder="fbs" required="required">
+                    <input type="text" name="restecg" placeholder="restecg" required="required">
+                    <input type="text" name="thalach" placeholder="thalach" required="required">
+                    <br></br>
+            
+                    <input type="text" name="exang" placeholder="exang" required="required">
+                    <input type="text" name="oldpeak" placeholder="oldpeak" required="required">
+                    <input type="text" name="slope" placeholder="slope" required="required">
+                    <input type="text" name="ca" placeholder="ca" required="required">
+                    <br></br>
+            
+                    <input type="text" name="thal" placeholder="thal" required="required">
+                    <br></br>
+            
+                    <div>
+                        <button type="submit"><strong>Predict Heart
+                                Disease</strong></button></a>
+                    </div>
+                </form>
+            </center>
+        </div>
+            
+            <div class="container1">
+                <center>
+                    <h1>{{prediction_text }}</h1>
+                </center>
+            </div>
+    </header>
+
+</body>
+</html>
